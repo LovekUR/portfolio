@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Personal Portfolio</title>
+  <script src="https://kit.fontawesome.com/f99cae5568.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+          <img src="images/icon.png" class="logo">
+
+          <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Home</a></li>
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="content-wrapper">
+        <div class="header-text">
+          <p>Frontend Developer</p>
+          <h1>Hi, I'm <span>Lovepreet</span><br>Kaur From India</h1>
+        </div>
+        <div id="circle-container"></div>
+      </div>
+      </div>
+    
+  </div>
+  </div>
+
+  <!--about-->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/vertical.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I am currently a second-year student at Chandigarh University, pursuing a degree in Computer Science and Engineering. I have developed a strong foundation in Data Structures and Algorithms (DSA) and possess a basic understanding of front-end technologies including HTML, CSS, JavaScript, and Bootstrap.
+
+            I completed my schooling from St. Attri Senior Secondary Public School in Punjab, where I gained a solid academic background. My passion for technology drives me to continuously learn and enhance my skills, and I am eager to apply my knowledge in practical and innovative ways.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links"onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><Span>Programming Languages</Span><br>C, C++, JavaScript, HTML, CSS</li>
+              <li><Span>Web development</Span><br>Basic understanding of front-end technologies (HTML, CSS, JavaScript), familiar with Bootstrap framework.</li>
+              <li><Span>Data Structures & Algorithms (DSA)</Span><br>Basic knowledge</li>
+              
+              <li><Span>Tools & Technologies</Span><br>Familiar with Code Editors (VS Code, Sublime Text), basic understanding of web frameworks.</li>
+             
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><Span>Personal Projects</Span><br>Myntra Clone
+                <br>
+                Cricket Game
+                <br>
+Calculator<br>
+To-Do App
+              </li>
+              <li><Span>Extracurricular Activities</Span><br> Active involvement in university-based hackathons and workshops</li>
+              
+              
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><Span>2024-Bachelor of Technology (B.Tech) in Computer Science and Engineering</Span><br>Chandigarh University, Punjab<br>
+              Expected Graduation: 2027</li>
+              <li><Span>2022-Senior Secondary (12th)</Span><br>St. attri sen. sec. public school, Punjab</li>
+              <li><Span>2020-Secondary (10th)</Span><br>St. attri sen. sec. public school, Punjab</li>
+              
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!---services-->
+  <div id="services">
+    <div class="container">
+      <div class="sub-title">My Services</div>
+      <div class="services-list">
+        
+          <div>
+            <i class="fa-solid fa-code  icons"></i>
+            <h2>Web Design</h2>
+            <p>I have developed several responsive websites, including a Myntra Clone project using HTML, CSS, and JavaScript. My focus is on creating user-friendly interfaces and ensuring a seamless user experience across devices. I have also used Bootstrap for responsive design in some projects.</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop icons"></i>
+            <h2>Frontend</h2>
+            <p>I have built interactive front-end applications like a To-Do App and a Calculator using HTML, CSS, and JavaScript. My experience includes implementing features such as form validation, event handling, and dynamic content updates, along with working on responsive layouts using Flexbox and Grid.</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-terminal icons"></i>
+            <h2>DSA</h2>
+            <p>I am a beginner in Data Structures and Algorithms (DSA) and currently learning about STL (Standard Template Library) in C++. I am practicing solving basic algorithmic problems and gradually building my understanding of fundamental data structures like Arrays, Linked Lists, and Stacks. I am focusing on improving my problem-solving skills through hands-on coding challenges on platforms like LeetCode and CodeNinjas.</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+ 
+<!----portfolio----- -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/myntra.jpg">
+        <div class="layer">
+          <h3>
+            Myntra Clone
+          </h3>
+          <p>A responsive web application replicating the front-end design of the popular e-commerce platform, Myntra. Built using HTML, CSS, and JavaScript, the project showcases a user-friendly interface, including navigation bars, product listing pages, and responsive layouts.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/bat (2).jpg">
+        <div class="layer">
+          <h3>
+            Bat, Ball, and Stump Game
+          </h3>
+          <p>
+            An interactive browser-based game simulating a cricket-themed scenario. Developed using HTML, CSS, and JavaScript, the game offers users an engaging experience by allowing them to hit the ball with a bat and score runs.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/calculator.jpg">
+        <div class="layer">
+          <h3>
+            Calculator
+          </h3>
+          <p>A fully functional web-based calculator for basic arithmetic operations. Built using HTML, CSS, and JavaScript, the calculator provides a user-friendly interface for performing calculations..</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      
+    </div>
+    <a href="#" class="btn">See More</a>
+  </div>
+</div>
+
+<!-- ------contact------- -->
+ <div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>Conatct@example.com</p>
+        <p><i class="fa-solid fa-phone"></i>9875543533</p>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="images/Resume.pdf" download class=" btn btn2">Download Resume</a>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="text" name="email" placeholder="Your Email" required>
+          <textarea name="Messsage" rows="6" placeholder="Your Message" ></textarea>
+          <button type="submit" class="btn btn2">Sumbit</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p>copyright @Lovepreet.<i class="fa-solid fa-heart"></i></p>
+  </div>
+ </div>
+
+
+  
+
+
+
+
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab")
+
+    }
+    
+  </script>
+
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+      sidemenu.style.right ="0";
+    }
+    function closemenu(){
+      sidemenu.style.right = "-200px";
+    }
+
+
+  </script>
+</body>
+</html>
